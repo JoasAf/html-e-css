@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .d1 {
+            
+            background-color: lightgray;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .d1:hover {
+            background-color: gray;
+        }
+
+        .d2 {
+            width: 137px;
+        }
+
+        .d2 > p {
+            display: none;
+        }
+
+        .d2:hover > p {
+            font-size: 20px;
+            display: block;
+            background-color: gray;
+            width: 50px;
+        }
+
+        a {
+            color: rgb(87, 87, 87);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(172, 172, 172);
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(172, 172, 172);
+        }
+
+        a::before {
+            content: "⇒ ";
+        }
+
+        a::after {
+            content: " ⇐";
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">1</div>
+    <div class="d1">2</div>
+    <div class="d1">3</div>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="d2">
+        Passe o mouse aqui
+        <p>Acho!</p>
+    </div>
+    <ul>
+        <li><a href="https://github.com/JoasAf?tab=repositories" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jo%C3%A1s-ant%C3%B4nio-franco-906725341/" target="_blank" rel="external">Perfil do Linkedin</a></li>
+        <li><a href="https://www.youtube.com/@joas0000aaaa" target="_blank" rel="external">Canal do Youtube</a></li>
+    </ul>
+</body>
+</html>
