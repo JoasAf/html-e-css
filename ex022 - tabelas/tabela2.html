@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+
+        caption {
+            padding: 10px;
+
+        }
+
+        thead, tfoot {
+            background-color: rgb(163, 163, 163);
+        }
+
+        thead > tr > th {
+            top: -1px;
+            position: sticky;
+            background-color: rgb(163, 163, 163);
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .pos {
+            text-align: center;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        p {
+            font-size: 2em;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><strong>População de cada estado do Brasil</strong></caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="pos">5</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="pos">6</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="pos">7</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="pos">8</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="pos">9</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="pos">10</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="pos">11</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="pos">12</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="pos">13</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="pos">14</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="pos">15</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="pos">16</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="pos">17</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="pos">18</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="pos">19</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="pos">20</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="pos">21</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="pos">22</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="pos">23</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="pos">24</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="pos">25</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total de habitantes</td>
+                <td class="num"><strong>212 583 720</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis nisi aut! Inventore, eaque nihil cumque ratione, reiciendis tempore, itaque quisquam ipsa debitis iste beatae qui quo quibusdam dicta explicabo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam similique dolores nam commodi reiciendis unde quasi eius tempore earum doloribus a eos quos ea pariatur illum, odit ipsam dignissimos illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores, deserunt quia optio expedita, nam sapiente debitis illo, velit quo officiis doloribus culpa iure labore facilis nobis eos necessitatibus ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>
