@@ -11,13 +11,17 @@ html, body, main {
 }
 
 body {
-    background: brown url(imagens/fundo-madeira.jpg) center fixed;
+    background: rgb(44, 37, 56) url(imagens/fundo-madeira.jpg) center fixed;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 div {
-    width: 301px;
-    height: 621px;
+    width: 62vw;
+    height: 127vw;
+
+    max-width: 301px;
+    max-height: 621px;
     
     position: absolute;
 
@@ -32,29 +36,40 @@ div {
 
 section.celular {
     background-image: url(imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    background-size: clamp(200px, 64vw, 311px);
     position: absolute;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 311px;
-    height: 627px;
+    width: 64vw;
+    height: 129vw;
+
+    max-width: 311px;
+    max-height: 627px;
+
 }
 
 section.celular > iframe {
     position: absolute;
-    top: 80px;
-    left: 22px;
+    top: 12.7%;
+    left: 6.9%;
 
-    width: 267px;
-    height: 471px;
+    width: 55.2vw;
+    height: 97.3vw;
+
+    max-width: 268px;
+    max-height: 472px;
 }
 
 section.redes {
-    margin-left: auto;
-    width: 60px;
-    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
 }
 
 section.redes > a {
@@ -62,16 +77,18 @@ section.redes > a {
 }
 
 section.redes img {
-    max-width: 60px;
+    width: 10vw;
+    max-width: 125px;
+    min-width: 60px;
     border-radius: 50%;
     transition-duration: .5s;
     box-sizing: border-box;
     box-shadow: 0 0 5px #00000080;
-    margin-bottom: -20px;
+    margin-right: -20px;
 }
 
 section.redes img:hover {
-    transform: scale(110%);
-    box-shadow: 0 0 5px 2px #00000080;
-    margin: 5px 0;
+    transform: scale(105%);
+    box-shadow: 0 0 7px 2px #00000080;
+    margin: 0 -10px 10px 10px;
 }
