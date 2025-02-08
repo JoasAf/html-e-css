@@ -11,7 +11,7 @@ html, body, main {
 }
 
 body {
-    background: rgb(44, 37, 56) url(imagens/fundo-madeira.jpg) center fixed;
+    background: rgb(44, 37, 56) url(../imagens/fundo-madeira.jpg) center fixed;
     background-size: cover;
     overflow-y: hidden;
 }
@@ -35,7 +35,7 @@ div {
 }
 
 section.celular {
-    background-image: url(imagens/frame-iphone.png);
+    background-image: url(../imagens/frame-iphone.png);
     background-repeat: no-repeat;
     background-size: clamp(200px, 64vw, 311px);
     position: absolute;
