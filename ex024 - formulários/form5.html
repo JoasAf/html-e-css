@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Jogos favoritos</legend>
+            <input type="checkbox" name="jominecraft" id="ijominecraft" checked required> <label for="ijominecraft">Minecraft</label> <br>
+            <input type="checkbox" name="jodarksouls" id="ijodarksouls"> <label for="ijodarksouls">Dark Souls</label> <br>
+            <input type="checkbox" name="jocsgo2" id="ijocsgo2"> <label for="ijocsgo2">CsGo 2</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <optgroup label="Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+
+                <optgroup label="Suldeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RS">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="icargo">Cargo:</label>
+            <input type="text" name="cargo" id="icargo" list="listcargo">
+            <datalist id="listcargo">
+                <option>Adiministrador</option>
+                <option>Gerente</option>
+                <option>Funcionário</option>
+                <option>Estagiário</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mesangem:</label><br>
+            <textarea name="msg" id="imsg" cols="15" rows="5"></textarea>
+        </p>
+    </form>
+</body>
+</html>
