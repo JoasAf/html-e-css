@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+menu, nav {
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    padding: 15px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    height: 87vh;
+}
+
+p {
+    text-align: justify;
+    padding: 20px;
+}
